@@ -1,0 +1,90 @@
+{
+  "source": "https://wikidocs.net/book/18092",
+  "reference_layout": [
+    "https://mihyanglee25.github.io/gitV01/index.html",
+    "https://mihyanglee25.github.io/gitV01/HTML/chapter03.html"
+  ],
+  "point_color": "#FF6347",
+  "chapters": {
+    "00": {
+      "title": "README",
+      "subtopics": 1
+    },
+    "01": {
+      "title": "n8n이란 무엇인가",
+      "subtopics": 4
+    },
+    "02": {
+      "title": "n8n 설치가이드",
+      "subtopics": 12
+    },
+    "03": {
+      "title": "n8n 인터페이스",
+      "subtopics": 2
+    },
+    "04": {
+      "title": "Auth 인증",
+      "subtopics": 30
+    },
+    "05": {
+      "title": "AI Agent",
+      "subtopics": 38
+    },
+    "06": {
+      "title": "워크플로우",
+      "subtopics": 29
+    },
+    "07": {
+      "title": "데이터분석 AI Agent",
+      "subtopics": 31
+    },
+    "08": {
+      "title": "MCP",
+      "subtopics": 12
+    },
+    "09": {
+      "title": "Claude Code + n8n",
+      "subtopics": 6
+    },
+    "10": {
+      "title": "n8n 커뮤니티 노드",
+      "subtopics": 2
+    },
+    "11": {
+      "title": "유즈케이스",
+      "subtopics": 18
+    },
+    "12": {
+      "title": "n8n Error Playbook",
+      "subtopics": 6
+    },
+    "13": {
+      "title": "운영 및 모니터링",
+      "subtopics": 5
+    },
+    "14": {
+      "title": "n8n Chrome Extension",
+      "subtopics": 3
+    },
+    "15": {
+      "title": "실전 워크플로우 레시피",
+      "subtopics": 5
+    },
+    "16": {
+      "title": "n8n Creators",
+      "subtopics": 3
+    },
+    "80": {
+      "title": "데이터팝콘 소식",
+      "subtopics": 3
+    },
+    "90": {
+      "title": "릴리즈노트",
+      "subtopics": 3
+    },
+    "99": {
+      "title": "놓치면 후회하는 꿀팁 모음",
+      "subtopics": 4
+    }
+  }
+}
