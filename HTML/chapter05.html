@@ -1,1 +1,297 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Agent | n8n 학습노트</title><link rel="stylesheet" href="../CSS/style.css"></head><body><header class="topbar"><button class="menu-btn" aria-label="목차 열기">목차</button><a class="brand" href="../index.html"><span class="brand-mark">n8n</span><span class="brand-text">n8n 노코드 자동화 학습노트</span></a><span class="chapter-badge">Chapter 05</span></header><div class="layout"><aside class="sidebar"><input class="search" type="search" placeholder="목차 검색"><div class="nav-title">Contents</div><div class="nav"><a class="" data-search="00 README" href="../HTML/chapter00.html"><span class="num">00</span><span>README</span></a><a class="" data-search="01 n8n이란 무엇인가" href="../HTML/chapter01.html"><span class="num">01</span><span>n8n이란 무엇인가</span></a><a class="" data-search="02 n8n 설치가이드" href="../HTML/chapter02.html"><span class="num">02</span><span>n8n 설치가이드</span></a><a class="" data-search="03 n8n 인터페이스" href="../HTML/chapter03.html"><span class="num">03</span><span>n8n 인터페이스</span></a><a class="" data-search="04 Auth 인증" href="../HTML/chapter04.html"><span class="num">04</span><span>Auth 인증</span></a><a class="active" data-search="05 AI Agent" href="../HTML/chapter05.html"><span class="num">05</span><span>AI Agent</span></a><a class="" data-search="06 워크플로우" href="../HTML/chapter06.html"><span class="num">06</span><span>워크플로우</span></a><a class="" data-search="07 데이터분석 AI Agent" href="../HTML/chapter07.html"><span class="num">07</span><span>데이터분석 AI Agent</span></a><a class="" data-search="08 MCP" href="../HTML/chapter08.html"><span class="num">08</span><span>MCP</span></a><a class="" data-search="09 Claude Code + n8n" href="../HTML/chapter09.html"><span class="num">09</span><span>Claude Code + n8n</span></a><a class="" data-search="10 n8n 커뮤니티 노드" href="../HTML/chapter10.html"><span class="num">10</span><span>n8n 커뮤니티 노드</span></a><a class="" data-search="11 유즈케이스" href="../HTML/chapter11.html"><span class="num">11</span><span>유즈케이스</span></a><a class="" data-search="12 n8n Error Playbook" href="../HTML/chapter12.html"><span class="num">12</span><span>n8n Error Playbook</span></a><a class="" data-search="13 운영 및 모니터링" href="../HTML/chapter13.html"><span class="num">13</span><span>운영 및 모니터링</span></a><a class="" data-search="14 n8n Chrome Extension" href="../HTML/chapter14.html"><span class="num">14</span><span>n8n Chrome Extension</span></a><a class="" data-search="15 실전 워크플로우 레시피" href="../HTML/chapter15.html"><span class="num">15</span><span>실전 워크플로우 레시피</span></a><a class="" data-search="16 n8n Creators" href="../HTML/chapter16.html"><span class="num">16</span><span>n8n Creators</span></a><a class="" data-search="80 데이터팝콘 소식" href="../HTML/chapter80.html"><span class="num">80</span><span>데이터팝콘 소식</span></a><a class="" data-search="90 릴리즈노트" href="../HTML/chapter90.html"><span class="num">90</span><span>릴리즈노트</span></a><a class="" data-search="99 놓치면 후회하는 꿀팁 모음" href="../HTML/chapter99.html"><span class="num">99</span><span>놓치면 후회하는 꿀팁 모음</span></a></div></aside><main class="content"><section class="hero"><div class="eyebrow">CHAPTER 05</div><h1>AI Agent</h1><p>AI Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p><div class="meta"><span class="pill">세부 주제 38개</span><span class="pill">Tomato Theme</span><span class="pill">강의용 재구성</span></div></section><section class="overview"><strong>학습 포인트</strong><br>이 장에서는 AI Agent의 핵심 개념을 n8n 워크플로우 안에서 어디에 배치하고 어떻게 연결하는지 이해하는 데 초점을 둡니다. 실제 구축 시에는 인증 정보, 데이터 구조, 오류 처리, 운영 환경까지 함께 확인하는 것이 중요합니다.</section><div class="section-head"><h2>세부 학습 내용</h2><span>오른쪽 상세 설명</span></div><div class="cards"><article class="card" data-search="Build an AI chat agent with n8n Build an AI chat agent with n8n를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다."><span class="idx">05-01</span><h3>Build an AI chat agent with n8n</h3><p>Build an AI chat agent with n8n를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p></article><article class="card" data-search="Model: OpenAI Model: OpenAI를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-02</span><h3>Model: OpenAI</h3><p>Model: OpenAI를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: Claude Model: Claude를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-03</span><h3>Model: Claude</h3><p>Model: Claude를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: Gemini Model: Gemini를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-04</span><h3>Model: Gemini</h3><p>Model: Gemini를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: Grok Model: Grok를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-05</span><h3>Model: Grok</h3><p>Model: Grok를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: DeepSeek Model: DeepSeek를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-06</span><h3>Model: DeepSeek</h3><p>Model: DeepSeek를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: AWS Bedrock Model: AWS Bedrock를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-07</span><h3>Model: AWS Bedrock</h3><p>Model: AWS Bedrock를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: Qwen Model: Qwen를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-08</span><h3>Model: Qwen</h3><p>Model: Qwen를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: Mistral Model: Mistral를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-09</span><h3>Model: Mistral</h3><p>Model: Mistral를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: OpenRouter Model: OpenRouter를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-10</span><h3>Model: OpenRouter</h3><p>Model: OpenRouter를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: Ollama Model: Ollama를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-11</span><h3>Model: Ollama</h3><p>Model: Ollama를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: Upstage Model: Upstage를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-12</span><h3>Model: Upstage</h3><p>Model: Upstage를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Model: Perplexity Model: Perplexity를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-13</span><h3>Model: Perplexity</h3><p>Model: Perplexity를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Evaluation Evaluation의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다."><span class="idx">05-14</span><h3>Evaluation</h3><p>Evaluation의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p></article><article class="card" data-search="Expressions Expressions의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다."><span class="idx">05-15</span><h3>Expressions</h3><p>Expressions의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p></article><article class="card" data-search="Memory: Simple Memory Memory: Simple Memory를 이용해 대화 상태와 이전 문맥을 유지하는 구조를 이해하고, 세션 단위 기억 설계의 핵심을 정리한다."><span class="idx">05-16</span><h3>Memory: Simple Memory</h3><p>Memory: Simple Memory를 이용해 대화 상태와 이전 문맥을 유지하는 구조를 이해하고, 세션 단위 기억 설계의 핵심을 정리한다.</p></article><article class="card" data-search="Memory: Postgres Chat History(Supabase) Memory: Postgres Chat History(Supabase)를 이용해 대화 상태와 이전 문맥을 유지하는 구조를 이해하고, 세션 단위 기억 설계의 핵심을 정리한다."><span class="idx">05-17</span><h3>Memory: Postgres Chat History(Supabase)</h3><p>Memory: Postgres Chat History(Supabase)를 이용해 대화 상태와 이전 문맥을 유지하는 구조를 이해하고, 세션 단위 기억 설계의 핵심을 정리한다.</p></article><article class="card" data-search="Tools: Tavily Tools: Tavily를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다."><span class="idx">05-18</span><h3>Tools: Tavily</h3><p>Tools: Tavily를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p></article><article class="card" data-search="Tools: NewsAPI Tools: NewsAPI 연동에 필요한 인증 방식, 자격 증명 관리, 요청·응답 흐름을 실무 관점에서 점검하는 항목이다."><span class="idx">05-19</span><h3>Tools: NewsAPI</h3><p>Tools: NewsAPI 연동에 필요한 인증 방식, 자격 증명 관리, 요청·응답 흐름을 실무 관점에서 점검하는 항목이다.</p></article><article class="card" data-search="Tools: Perplexity Tools: Perplexity를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다."><span class="idx">05-20</span><h3>Tools: Perplexity</h3><p>Tools: Perplexity를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p></article><article class="card" data-search="Tools: Apify Tools: Apify 연동에 필요한 인증 방식, 자격 증명 관리, 요청·응답 흐름을 실무 관점에서 점검하는 항목이다."><span class="idx">05-21</span><h3>Tools: Apify</h3><p>Tools: Apify 연동에 필요한 인증 방식, 자격 증명 관리, 요청·응답 흐름을 실무 관점에서 점검하는 항목이다.</p></article><article class="card" data-search="Tools: HTTP Request Tools: HTTP Request를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다."><span class="idx">05-22</span><h3>Tools: HTTP Request</h3><p>Tools: HTTP Request를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p></article><article class="card" data-search="Tools: Puppeteer Tools: Puppeteer를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다."><span class="idx">05-23</span><h3>Tools: Puppeteer</h3><p>Tools: Puppeteer를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p></article><article class="card" data-search="Tools: Code Interpreter Tools: Code Interpreter를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다."><span class="idx">05-24</span><h3>Tools: Code Interpreter</h3><p>Tools: Code Interpreter를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p></article><article class="card" data-search="Tools: Thinking Tool Tools: Thinking Tool를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다."><span class="idx">05-25</span><h3>Tools: Thinking Tool</h3><p>Tools: Thinking Tool를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p></article><article class="card" data-search="Tools: Calculator Tool Tools: Calculator Tool를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다."><span class="idx">05-26</span><h3>Tools: Calculator Tool</h3><p>Tools: Calculator Tool를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p></article><article class="card" data-search="Tools: Vector Store (RAG) Tools: Vector Store (RAG)를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다."><span class="idx">05-27</span><h3>Tools: Vector Store (RAG)</h3><p>Tools: Vector Store (RAG)를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p></article><article class="card" data-search="AI Agent Workflow AI Agent Workflow를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다."><span class="idx">05-28</span><h3>AI Agent Workflow</h3><p>AI Agent Workflow를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p></article><article class="card" data-search="Sub-Workflow Sub-Workflow의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다."><span class="idx">05-29</span><h3>Sub-Workflow</h3><p>Sub-Workflow의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p></article><article class="card" data-search="AI Agent 활용 사례 AI Agent 활용 사례를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다."><span class="idx">05-30</span><h3>AI Agent 활용 사례</h3><p>AI Agent 활용 사례를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p></article><article class="card" data-search="여행사 Travel Agent 여행사 Travel Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다."><span class="idx">05-31</span><h3>여행사 Travel Agent</h3><p>여행사 Travel Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p></article><article class="card" data-search="이커머스 E-Commerce Agent 이커머스 E-Commerce Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다."><span class="idx">05-32</span><h3>이커머스 E-Commerce Agent</h3><p>이커머스 E-Commerce Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p></article><article class="card" data-search="넷플릭스 OTT Agent 넷플릭스 OTT Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다."><span class="idx">05-33</span><h3>넷플릭스 OTT Agent</h3><p>넷플릭스 OTT Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p></article><article class="card" data-search="구글뉴스 AI 요약 구글뉴스 AI 요약를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다."><span class="idx">05-34</span><h3>구글뉴스 AI 요약</h3><p>구글뉴스 AI 요약를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p></article><article class="card" data-search="병원 예약 시스템 병원 예약 시스템의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다."><span class="idx">05-35</span><h3>병원 예약 시스템</h3><p>병원 예약 시스템의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p></article><article class="card" data-search="고객 지원 챗봇 고객 지원 챗봇의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다."><span class="idx">05-36</span><h3>고객 지원 챗봇</h3><p>고객 지원 챗봇의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p></article><article class="card" data-search="쇼츠 AI 콘텐츠 자동화 쇼츠 AI 콘텐츠 자동화를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다."><span class="idx">05-37</span><h3>쇼츠 AI 콘텐츠 자동화</h3><p>쇼츠 AI 콘텐츠 자동화를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p></article><article class="card" data-search="AI Video 3.0 쇼츠 제작 자동화 AI Video 3.0 쇼츠 제작 자동화를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다."><span class="idx">05-38</span><h3>AI Video 3.0 쇼츠 제작 자동화</h3><p>AI Video 3.0 쇼츠 제작 자동화를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p></article></div><div class="footer">Wikidocs Book 18092의 공개 목차를 참고해 학습용으로 재구성한 요약 사이트입니다. 원문 저작권은 해당 저자에게 있습니다. · Point Color: Tomato #FF6347</div></main></div><script src="../JavaScript/main.js"></script></body></html>
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AI Agent | n8n 학습노트</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header class="topbar"><button class="menu-btn" aria-label="목차 열기">목차</button><a class="brand"
+            href="../index.html"><span class="brand-mark">n8n</span><span class="brand-text">n8n 노코드 자동화
+                학습노트</span></a><span class="chapter-badge">Chapter 05</span></header>
+    <div class="layout">
+        <aside class="sidebar"><input class="search" type="search" placeholder="목차 검색">
+            <div class="nav-title">Contents</div>
+            <div class="nav"><a class="" data-search="00 README" href="../HTML/chapter00.html"><span
+                        class="num">00</span><span>README</span></a><a class="" data-search="01 n8n이란 무엇인가"
+                    href="../HTML/chapter01.html"><span class="num">01</span><span>n8n이란 무엇인가</span></a><a class=""
+                    data-search="02 n8n 설치가이드" href="../HTML/chapter02.html"><span class="num">02</span><span>n8n
+                        설치가이드</span></a><a class="" data-search="03 n8n 인터페이스" href="../HTML/chapter03.html"><span
+                        class="num">03</span><span>n8n 인터페이스</span></a><a class="" data-search="04 Auth 인증"
+                    href="../HTML/chapter04.html"><span class="num">04</span><span>Auth 인증</span></a><a class="active"
+                    data-search="05 AI Agent" href="../HTML/chapter05.html"><span class="num">05</span><span>AI
+                        Agent</span></a><a class="" data-search="06 워크플로우" href="../HTML/chapter06.html"><span
+                        class="num">06</span><span>워크플로우</span></a><a class="" data-search="07 데이터분석 AI Agent"
+                    href="../HTML/chapter07.html"><span class="num">07</span><span>데이터분석 AI Agent</span></a><a class=""
+                    data-search="08 MCP" href="../HTML/chapter08.html"><span class="num">08</span><span>MCP</span></a><a
+                    class="" data-search="09 Claude Code + n8n" href="../HTML/chapter09.html"><span
+                        class="num">09</span><span>Claude Code + n8n</span></a><a class="" data-search="10 n8n 커뮤니티 노드"
+                    href="../HTML/chapter10.html"><span class="num">10</span><span>n8n 커뮤니티 노드</span></a><a class=""
+                    data-search="11 유즈케이스" href="../HTML/chapter11.html"><span
+                        class="num">11</span><span>유즈케이스</span></a><a class="" data-search="12 n8n Error Playbook"
+                    href="../HTML/chapter12.html"><span class="num">12</span><span>n8n Error Playbook</span></a><a
+                    class="" data-search="13 운영 및 모니터링" href="../HTML/chapter13.html"><span
+                        class="num">13</span><span>운영 및 모니터링</span></a><a class="" data-search="14 n8n Chrome Extension"
+                    href="../HTML/chapter14.html"><span class="num">14</span><span>n8n Chrome Extension</span></a><a
+                    class="" data-search="15 실전 워크플로우 레시피" href="../HTML/chapter15.html"><span
+                        class="num">15</span><span>실전 워크플로우 레시피</span></a><a class="" data-search="16 n8n Creators"
+                    href="../HTML/chapter16.html"><span class="num">16</span><span>n8n Creators</span></a><a class=""
+                    data-search="80 데이터팝콘 소식" href="../HTML/chapter80.html"><span class="num">80</span><span>데이터팝콘
+                        소식</span></a><a class="" data-search="90 릴리즈노트" href="../HTML/chapter90.html"><span
+                        class="num">90</span><span>릴리즈노트</span></a><a class="" data-search="99 놓치면 후회하는 꿀팁 모음"
+                    href="../HTML/chapter99.html"><span class="num">99</span><span>놓치면 후회하는 꿀팁 모음</span></a></div>
+        </aside>
+        <main class="content">
+            <section class="hero">
+                <div class="eyebrow">CHAPTER 05</div>
+                <h1>AI Agent</h1>
+                <p>AI Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                <div class="meta"><span class="pill">세부 주제 38개</span><span class="pill">Tomato Theme</span><span
+                        class="pill">강의용 재구성</span></div>
+            </section>
+            <section class="overview"><strong>학습 포인트</strong><br>이 장에서는 AI Agent의 핵심 개념을 n8n 워크플로우 안에서 어디에 배치하고 어떻게
+                연결하는지 이해하는 데 초점을 둡니다. 실제 구축 시에는 인증 정보, 데이터 구조, 오류 처리, 운영 환경까지 함께 확인하는 것이 중요합니다.</section>
+            <div class="section-head">
+                <h2>세부 학습 내용</h2><span>오른쪽 상세 설명</span>
+            </div>
+            <div class="cards">
+                <article class="card"
+                    data-search="Build an AI chat agent with n8n Build an AI chat agent with n8n를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.">
+                    <span class="idx">05-01</span>
+                    <h3>Build an AI chat agent with n8n</h3>
+                    <p>Build an AI chat agent with n8n를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: OpenAI Model: OpenAI를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-02</span>
+                    <h3>Model: OpenAI</h3>
+                    <p>Model: OpenAI를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: Claude Model: Claude를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-03</span>
+                    <h3>Model: Claude</h3>
+                    <p>Model: Claude를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: Gemini Model: Gemini를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-04</span>
+                    <h3>Model: Gemini</h3>
+                    <p>Model: Gemini를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: Grok Model: Grok를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-05</span>
+                    <h3>Model: Grok</h3>
+                    <p>Model: Grok를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: DeepSeek Model: DeepSeek를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-06</span>
+                    <h3>Model: DeepSeek</h3>
+                    <p>Model: DeepSeek를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: AWS Bedrock Model: AWS Bedrock를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-07</span>
+                    <h3>Model: AWS Bedrock</h3>
+                    <p>Model: AWS Bedrock를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: Qwen Model: Qwen를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-08</span>
+                    <h3>Model: Qwen</h3>
+                    <p>Model: Qwen를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: Mistral Model: Mistral를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-09</span>
+                    <h3>Model: Mistral</h3>
+                    <p>Model: Mistral를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: OpenRouter Model: OpenRouter를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-10</span>
+                    <h3>Model: OpenRouter</h3>
+                    <p>Model: OpenRouter를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: Ollama Model: Ollama를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-11</span>
+                    <h3>Model: Ollama</h3>
+                    <p>Model: Ollama를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: Upstage Model: Upstage를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-12</span>
+                    <h3>Model: Upstage</h3>
+                    <p>Model: Upstage를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Model: Perplexity Model: Perplexity를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-13</span>
+                    <h3>Model: Perplexity</h3>
+                    <p>Model: Perplexity를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Evaluation Evaluation의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.">
+                    <span class="idx">05-14</span>
+                    <h3>Evaluation</h3>
+                    <p>Evaluation의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Expressions Expressions의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.">
+                    <span class="idx">05-15</span>
+                    <h3>Expressions</h3>
+                    <p>Expressions의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Memory: Simple Memory Memory: Simple Memory를 이용해 대화 상태와 이전 문맥을 유지하는 구조를 이해하고, 세션 단위 기억 설계의 핵심을 정리한다.">
+                    <span class="idx">05-16</span>
+                    <h3>Memory: Simple Memory</h3>
+                    <p>Memory: Simple Memory를 이용해 대화 상태와 이전 문맥을 유지하는 구조를 이해하고, 세션 단위 기억 설계의 핵심을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Memory: Postgres Chat History(Supabase) Memory: Postgres Chat History(Supabase)를 이용해 대화 상태와 이전 문맥을 유지하는 구조를 이해하고, 세션 단위 기억 설계의 핵심을 정리한다.">
+                    <span class="idx">05-17</span>
+                    <h3>Memory: Postgres Chat History(Supabase)</h3>
+                    <p>Memory: Postgres Chat History(Supabase)를 이용해 대화 상태와 이전 문맥을 유지하는 구조를 이해하고, 세션 단위 기억 설계의 핵심을 정리한다.
+                    </p>
+                </article>
+                <article class="card"
+                    data-search="Tools: Tavily Tools: Tavily를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.">
+                    <span class="idx">05-18</span>
+                    <h3>Tools: Tavily</h3>
+                    <p>Tools: Tavily를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p>
+                </article>
+                <article class="card"
+                    data-search="Tools: NewsAPI Tools: NewsAPI 연동에 필요한 인증 방식, 자격 증명 관리, 요청·응답 흐름을 실무 관점에서 점검하는 항목이다.">
+                    <span class="idx">05-19</span>
+                    <h3>Tools: NewsAPI</h3>
+                    <p>Tools: NewsAPI 연동에 필요한 인증 방식, 자격 증명 관리, 요청·응답 흐름을 실무 관점에서 점검하는 항목이다.</p>
+                </article>
+                <article class="card"
+                    data-search="Tools: Perplexity Tools: Perplexity를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.">
+                    <span class="idx">05-20</span>
+                    <h3>Tools: Perplexity</h3>
+                    <p>Tools: Perplexity를 n8n AI 워크플로우의 언어모델로 연결할 때 필요한 특징, 모델 선택 기준, 비용·지연시간·보안 관점을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Tools: Apify Tools: Apify 연동에 필요한 인증 방식, 자격 증명 관리, 요청·응답 흐름을 실무 관점에서 점검하는 항목이다."><span
+                        class="idx">05-21</span>
+                    <h3>Tools: Apify</h3>
+                    <p>Tools: Apify 연동에 필요한 인증 방식, 자격 증명 관리, 요청·응답 흐름을 실무 관점에서 점검하는 항목이다.</p>
+                </article>
+                <article class="card"
+                    data-search="Tools: HTTP Request Tools: HTTP Request를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.">
+                    <span class="idx">05-22</span>
+                    <h3>Tools: HTTP Request</h3>
+                    <p>Tools: HTTP Request를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p>
+                </article>
+                <article class="card"
+                    data-search="Tools: Puppeteer Tools: Puppeteer를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.">
+                    <span class="idx">05-23</span>
+                    <h3>Tools: Puppeteer</h3>
+                    <p>Tools: Puppeteer를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p>
+                </article>
+                <article class="card"
+                    data-search="Tools: Code Interpreter Tools: Code Interpreter를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.">
+                    <span class="idx">05-24</span>
+                    <h3>Tools: Code Interpreter</h3>
+                    <p>Tools: Code Interpreter를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p>
+                </article>
+                <article class="card"
+                    data-search="Tools: Thinking Tool Tools: Thinking Tool를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.">
+                    <span class="idx">05-25</span>
+                    <h3>Tools: Thinking Tool</h3>
+                    <p>Tools: Thinking Tool를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p>
+                </article>
+                <article class="card"
+                    data-search="Tools: Calculator Tool Tools: Calculator Tool를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.">
+                    <span class="idx">05-26</span>
+                    <h3>Tools: Calculator Tool</h3>
+                    <p>Tools: Calculator Tool를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p>
+                </article>
+                <article class="card"
+                    data-search="Tools: Vector Store (RAG) Tools: Vector Store (RAG)를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.">
+                    <span class="idx">05-27</span>
+                    <h3>Tools: Vector Store (RAG)</h3>
+                    <p>Tools: Vector Store (RAG)를 AI Agent의 외부 도구로 연결해 검색·계산·브라우징·API 실행 능력을 확장하는 흐름을 다룬다.</p>
+                </article>
+                <article class="card"
+                    data-search="AI Agent Workflow AI Agent Workflow를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.">
+                    <span class="idx">05-28</span>
+                    <h3>AI Agent Workflow</h3>
+                    <p>AI Agent Workflow를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="Sub-Workflow Sub-Workflow의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.">
+                    <span class="idx">05-29</span>
+                    <h3>Sub-Workflow</h3>
+                    <p>Sub-Workflow의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="AI Agent 활용 사례 AI Agent 활용 사례를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.">
+                    <span class="idx">05-30</span>
+                    <h3>AI Agent 활용 사례</h3>
+                    <p>AI Agent 활용 사례를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="여행사 Travel Agent 여행사 Travel Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.">
+                    <span class="idx">05-31</span>
+                    <h3>여행사 Travel Agent</h3>
+                    <p>여행사 Travel Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="이커머스 E-Commerce Agent 이커머스 E-Commerce Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.">
+                    <span class="idx">05-32</span>
+                    <h3>이커머스 E-Commerce Agent</h3>
+                    <p>이커머스 E-Commerce Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="넷플릭스 OTT Agent 넷플릭스 OTT Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.">
+                    <span class="idx">05-33</span>
+                    <h3>넷플릭스 OTT Agent</h3>
+                    <p>넷플릭스 OTT Agent를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="구글뉴스 AI 요약 구글뉴스 AI 요약를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.">
+                    <span class="idx">05-34</span>
+                    <h3>구글뉴스 AI 요약</h3>
+                    <p>구글뉴스 AI 요약를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="병원 예약 시스템 병원 예약 시스템의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다."><span
+                        class="idx">05-35</span>
+                    <h3>병원 예약 시스템</h3>
+                    <p>병원 예약 시스템의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="고객 지원 챗봇 고객 지원 챗봇의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다."><span
+                        class="idx">05-36</span>
+                    <h3>고객 지원 챗봇</h3>
+                    <p>고객 지원 챗봇의 핵심 개념과 n8n에서의 활용 위치를 이해하고, 실제 자동화 설계 시 확인해야 할 실무 포인트를 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="쇼츠 AI 콘텐츠 자동화 쇼츠 AI 콘텐츠 자동화를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.">
+                    <span class="idx">05-37</span>
+                    <h3>쇼츠 AI 콘텐츠 자동화</h3>
+                    <p>쇼츠 AI 콘텐츠 자동화를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                </article>
+                <article class="card"
+                    data-search="AI Video 3.0 쇼츠 제작 자동화 AI Video 3.0 쇼츠 제작 자동화를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.">
+                    <span class="idx">05-38</span>
+                    <h3>AI Video 3.0 쇼츠 제작 자동화</h3>
+                    <p>AI Video 3.0 쇼츠 제작 자동화를 중심으로 모델·메모리·도구·워크플로우를 결합하여 목적 지향형 자동화 시스템을 구성하는 핵심 개념을 정리한다.</p>
+                </article>
+            </div>
+            <div class="footer">학습용으로 재구성한 요약 사이트입니다. </div>
+        </main>
+    </div>
+    <script src="../JavaScript/main.js"></script>
+</body>
+
+</html>
