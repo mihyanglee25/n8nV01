@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>01-01 왜 n8n인가 | n8n 학습노트</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header class="topbar"><button class="menu-btn">목차</button><a class="brand" href="../index.html"><span
+                class="brand-mark">n8n</span><span class="brand-text">n8n 노코드 자동화 학습노트</span></a><span
+            class="chapter-badge">01-01</span></header>
+    <div class="layout">
+        <aside class="sidebar"><input class="search" type="search" placeholder="목차 검색">
+            <div class="nav-title">Chapter 01</div>
+            <div class="nav"><a href="chapter01Cnt.html"><span class="num">01</span><span>n8n이란 무엇인가</span></a><a
+                    class="active" href="chapter01_01Cnt.html"><span class="num">01-01</span><span>왜 n8n인가</span></a><a
+                    href="chapter01_02Cnt.html"><span class="num">01-02</span><span>Glossary</span></a><a
+                    href="chapter01_03Cnt.html"><span class="num">01-03</span><span>데이터 흐름</span></a><a
+                    href="chapter02.html"><span class="num">02</span><span>n8n 설치가이드</span></a></div>
+        </aside>
+        <main class="content content-detail">
+            <section class="hero">
+                <div class="eyebrow">CHAPTER 01-01 · COMPARISON</div>
+                <h1>왜 n8n인가</h1>
+                <p>Zapier·Make와 비교하면서 비용, 데이터 주권, 복잡한 데이터 처리, AI 확장성이라는 관점에서 n8n의 장단점을 판단한다.</p>
+            </section>
+            <nav class="chapter-subnav"><a href="chapter01Cnt.html">01 개요</a><a class="active"
+                    href="chapter01_01Cnt.html">01-01 비교</a><a href="chapter01_02Cnt.html">01-02 용어</a><a
+                    href="chapter01_03Cnt.html">01-03 흐름</a></nav>
+            <section class="lesson-section">
+                <h2>1. 핵심 판단 기준</h2>
+                <figure class="figure-card"><img src="../Img/01-01-01.png"
+                        data-origin="https://static.wikidocs.net/images/page/290885/01-01-why-n8n-comparison-guide-ko.png"
+                        onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src=this.dataset.origin;}"
+                        alt="왜 n8n인가 비교 가이드">
+                    <figcaption>원문 이미지 1: 자동화 3대 툴 비교 가이드</figcaption>
+                </figure>
+                <div class="path-grid">
+                    <article class="path-card">
+                        <h3>비용</h3>
+                        <p>셀프호스팅에서는 실행 건수 자체보다 서버 자원이 비용의 핵심이 된다.</p>
+                    </article>
+                    <article class="path-card">
+                        <h3>보안</h3>
+                        <p>사내 서버에서 처리하면 외부 SaaS로 민감 데이터가 이동하는 범위를 줄일 수 있다.</p>
+                    </article>
+                    <article class="path-card">
+                        <h3>데이터 처리</h3>
+                        <p>JSON 배열, 반복, 조건 분기, 코드 가공처럼 복잡한 처리에서 유연성이 높다.</p>
+                    </article>
+                    <article class="path-card">
+                        <h3>AI 확장</h3>
+                        <p>LLM·Tool·Memory·MCP를 워크플로우와 연결하기 쉽다.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="lesson-section">
+                <h2>2. 비용 비교는 이렇게 이해한다</h2>
+                <p>원문은 월 실행량이 증가할수록 SaaS 종량제 비용이 커지는 사례를 제시한다. 다만 실제 요금제는 수시로 바뀔 수 있으므로 아래 수치는 <b>개념 이해용</b>으로 보고 계약 전
+                    공식 가격표 확인이 필요하다.</p>
+                <div class="table-wrap">
+                    <table class="edu-table">
+                        <thead>
+                            <tr>
+                                <th>월 실행량 예시</th>
+                                <th>Zapier</th>
+                                <th>Make</th>
+                                <th>n8n Community</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2천 건</td>
+                                <td>유료 Task 기반</td>
+                                <td>유료 Operation 기반</td>
+                                <td>셀프호스팅 시 라이선스 실행비 없음</td>
+                            </tr>
+                            <tr>
+                                <td>2만 건</td>
+                                <td>상위 요금제 필요 가능</td>
+                                <td>Operation 증가</td>
+                                <td>서버 자원·운영비 중심</td>
+                            </tr>
+                            <tr>
+                                <td>5만 건+</td>
+                                <td>비용 증가 폭 큼</td>
+                                <td>비용 증가</td>
+                                <td>서버 확장 비용을 직접 관리</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="warning-box"><b>확인이 필요하다.</b> 원문에 제시된 달러 금액은 시점에 따른 예시다. 실제 도입 시에는 공식 가격 페이지와 필요한 기능 범위를 다시
+                    비교해야 한다.</div>
+            </section>
+            <section class="lesson-section">
+                <h2>3. Zapier/Make에서 n8n으로 이동하는 대표 이유</h2>
+                <ol>
+                    <li><b>종량제 스트레스:</b> 자동화 성공으로 실행량이 늘수록 비용도 함께 증가한다.</li>
+                    <li><b>복잡한 가공:</b> 배열 처리, 커스텀 로직, 반복문, 동적 표현식이 많아질수록 로우코드 환경의 가치가 커진다.</li>
+                    <li><b>사내 보안:</b> 개인정보·기밀 데이터가 외부 SaaS를 통과하면 정책상 제약이 생길 수 있다.</li>
+                </ol>
+                <h3>툴 선택 가이드</h3>
+                <div class="table-wrap">
+                    <table class="edu-table">
+                        <thead>
+                            <tr>
+                                <th>항목</th>
+                                <th>n8n</th>
+                                <th>Zapier</th>
+                                <th>Make</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>접근성</td>
+                                <td>중간</td>
+                                <td>매우 쉬움</td>
+                                <td>쉬움~중간</td>
+                            </tr>
+                            <tr>
+                                <td>배포</td>
+                                <td>Cloud/Local/Docker</td>
+                                <td>Cloud</td>
+                                <td>Cloud</td>
+                            </tr>
+                            <tr>
+                                <td>커스텀 코드</td>
+                                <td>강함</td>
+                                <td>제한적</td>
+                                <td>내장 함수 중심</td>
+                            </tr>
+                            <tr>
+                                <td>복잡한 분기</td>
+                                <td>강함</td>
+                                <td>단순 자동화에 적합</td>
+                                <td>시각화 강점</td>
+                            </tr>
+                            <tr>
+                                <td>추천 대상</td>
+                                <td>개발자·데이터·비용/보안 중시 조직</td>
+                                <td>비개발자의 빠른 SaaS 연동</td>
+                                <td>시각적 시나리오 선호 사용자</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="lesson-section">
+                <h2>4. 자동화 도구의 진화</h2>
+                <figure class="figure-card"><img src="../Img/01-01-02.png"
+                        data-origin="https://static.wikidocs.net/images/page/290885/01-01-evolution-of-automation-timeline-ko.png"
+                        onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src=this.dataset.origin;}"
+                        alt="노코드 자동화의 진화">
+                    <figcaption>원문 이미지 2: RPA → SaaS → 시각적 로우코드 → 오픈소스·AI Agent</figcaption>
+                </figure>
+                <div class="flow">
+                    <div class="flow-step"><b>1. RPA</b>화면 클릭·입력 자동화</div>
+                    <div class="flow-step"><b>2. SaaS 연결</b>API 기반 Trigger → Action</div>
+                    <div class="flow-step"><b>3. 시각적 로우코드</b>분기·루프·다단계 처리</div>
+                    <div class="flow-step"><b>4. AI Agent</b>데이터 주권 + 도구 사용형 AI</div>
+                </div>
+            </section>
+            <section class="lesson-section">
+                <h2>5. 초보자 비교 실습</h2>
+                <p>동일한 “Google Form 제출 → Slack 알림” 업무를 세 도구에서 설계한다고 가정한다.</p>
+                <ol class="step-list">
+                    <li>Trigger를 Google Form 또는 Webhook으로 정의한다.</li>
+                    <li>입력 JSON에서 이름·이메일·문의내용을 추출한다.</li>
+                    <li>조건 분기가 필요하면 n8n의 If/Switch 또는 각 도구의 동등 기능을 사용한다.</li>
+                    <li>Slack 메시지를 발송한다.</li>
+                    <li>실행량이 월 1천→1만→10만 건으로 늘어날 때 비용과 운영 부담을 비교한다.</li>
+                </ol>
+                <div class="beginner"><strong>판단 기준</strong><br>“어떤 툴이 최고인가”보다 <b>누가 운영하는가, 데이터가 어디에 있어야 하는가, 얼마나 복잡한가,
+                        실행량이 얼마나 커지는가</b>를 먼저 묻는 것이 좋다.</div>
+            </section>
+            <div class="next-box"><a href="chapter01Cnt.html">← 01 개요</a><a href="chapter01_02Cnt.html">01-02 Glossary
+                    →</a></div>
+            <div class="image-audit"><b>이미지 감사</b><br>원문 2건 · 실제 원본 URL 2건 · 로컬 목표 파일 <code>01-01-01.png</code>,
+                <code>01-01-02.png</code>.</div>
+            <p class="source-note">원문: Wikidocs 290885. 요금·제품 기능은 변경 가능성이 있어 최신 확인이 필요하다.</p>
+            <div class="footer">Point Color: Tomato #FF6347 · File: chapter01_01Cnt.html</div>
+        </main>
+    </div>
+    <script src="../JavaScript/main.js"></script>
+</body>
+
+</html>

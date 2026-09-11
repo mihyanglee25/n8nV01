@@ -1,0 +1,8 @@
+{
+  "chapter main pages": 20,
+  "menu chapter links": 20,
+  "index has menu iframe": true,
+  "index has content iframe": true,
+  "chapter pages with duplicated sidebar": 0,
+  "validation errors": []
+}

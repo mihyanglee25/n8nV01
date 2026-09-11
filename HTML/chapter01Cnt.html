@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <title>01 n8n이란 무엇인가 | n8n 학습노트</title>
+     <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+     <header class="topbar"><button class="menu-btn" aria-label="목차 열기">목차</button><a class="brand"
+               href="../index.html"><span class="brand-mark">n8n</span><span class="brand-text">n8n 노코드 자동화
+                    학습노트</span></a><span class="chapter-badge">Chapter 01</span></header>
+     <div class="layout">
+          <aside class="sidebar"><input class="search" type="search" placeholder="목차 검색">
+               <div class="nav-title">Contents</div>
+               <div class="nav">
+                    <a data-search="00 README" href="chapter00Cnt.html"><span
+                              class="num">00</span><span>README</span></a><a class="active" data-search="01 n8n이란 무엇인가"
+                         href="chapter01Cnt.html"><span class="num">01</span><span>n8n이란 무엇인가</span></a><a
+                         data-search="02 n8n 설치가이드" href="chapter02.html"><span class="num">02</span><span>n8n
+                              설치가이드</span></a><a data-search="03 n8n 인터페이스" href="chapter03.html"><span
+                              class="num">03</span><span>n8n 인터페이스</span></a><a data-search="04 Auth 인증"
+                         href="chapter04.html"><span class="num">04</span><span>Auth 인증</span></a><a
+                         data-search="05 AI Agent" href="chapter05.html"><span class="num">05</span><span>AI
+                              Agent</span></a><a data-search="06 워크플로우" href="chapter06.html"><span
+                              class="num">06</span><span>워크플로우</span></a><a data-search="07 데이터분석 AI Agent"
+                         href="chapter07.html"><span class="num">07</span><span>데이터분석 AI Agent</span></a><a
+                         data-search="08 MCP" href="chapter08.html"><span class="num">08</span><span>MCP</span></a><a
+                         data-search="09 Claude Code + n8n" href="chapter09.html"><span
+                              class="num">09</span><span>Claude Code + n8n</span></a><a data-search="10 n8n 커뮤니티 노드"
+                         href="chapter10.html"><span class="num">10</span><span>커뮤니티 노드</span></a><a
+                         data-search="11 유즈케이스" href="chapter11.html"><span
+                              class="num">11</span><span>유즈케이스</span></a><a data-search="12 Error Playbook"
+                         href="chapter12.html"><span class="num">12</span><span>Error Playbook</span></a><a
+                         data-search="13 운영 및 모니터링" href="chapter13.html"><span class="num">13</span><span>운영 및
+                              모니터링</span></a><a data-search="14 Chrome Extension" href="chapter14.html"><span
+                              class="num">14</span><span>Chrome Extension</span></a><a data-search="15 실전 워크플로우"
+                         href="chapter15.html"><span class="num">15</span><span>실전 워크플로우</span></a><a
+                         data-search="16 Creators" href="chapter16.html"><span
+                              class="num">16</span><span>Creators</span></a><a data-search="80 소식"
+                         href="chapter80.html"><span class="num">80</span><span>데이터팝콘 소식</span></a><a
+                         data-search="90 릴리즈노트" href="chapter90.html"><span
+                              class="num">90</span><span>릴리즈노트</span></a><a data-search="99 꿀팁"
+                         href="chapter99.html"><span class="num">99</span><span>꿀팁 모음</span></a>
+               </div>
+          </aside>
+          <main class="content content-detail">
+               <section class="hero">
+                    <div class="eyebrow">CHAPTER 01 · INTRODUCTION</div>
+                    <h1>n8n이란 무엇인가</h1>
+                    <p>n8n을 단순한 “앱 연결 도구”가 아니라 데이터와 업무 흐름을 시각적으로 설계하는 노코드·로우코드 자동화 플랫폼으로 이해한다.</p>
+                    <div class="meta"><span class="pill">노코드/로우코드</span><span class="pill">셀프호스팅</span><span
+                              class="pill">AI Agent</span><span class="pill">Tomato #FF6347</span></div>
+               </section>
+               <nav class="chapter-subnav"><a class="active" href="chapter01Cnt.html">01 개요</a><a
+                         href="chapter01_01Cnt.html">01-01 왜 n8n인가</a><a href="chapter01_02Cnt.html">01-02
+                         Glossary</a><a href="chapter01_03Cnt.html">01-03 데이터 흐름</a></nav>
+               <div class="toc-panel"><strong>학습 순서</strong><a href="#summary">핵심 요약</a><a href="#strength">5대 강점</a><a
+                         href="#concept">5대 핵심 개념</a><a href="#practice">첫 실습</a></div>
+               <section id="summary" class="lesson-section">
+                    <h2>1. 30초 핵심 요약</h2>
+                    <div class="overview"><strong>한 문장으로 이해하기</strong><br>n8n은 <span class="accent">Trigger → 처리 노드 → 결과
+                              노드</span>를 연결하여 사람이 반복하던 업무를 자동 실행하는 워크플로우 플랫폼이다.</div>
+                    <ul class="checklist">
+                         <li>드래그 앤 드롭으로 서비스를 연결할 수 있다.</li>
+                         <li>Docker 등을 이용해 직접 운영하는 셀프호스팅 구성이 가능하다.</li>
+                         <li>JavaScript·Python을 활용해 노코드의 한계를 보완할 수 있다.</li>
+                         <li>LLM, Tool, Memory, MCP를 결합해 AI Agent 흐름을 만들 수 있다.</li>
+                    </ul>
+                    <figure class="figure-card"><img src="../Img/01-00-01.png"
+                              data-origin="https://static.wikidocs.net/images/page/290882/01-n8n-5-core-strengths-ko.png"
+                              onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src=this.dataset.origin;}"
+                              alt="n8n의 5대 핵심 강점">
+                         <figcaption>원문 이미지: n8n의 5대 핵심 강점. 로컬 파일명 01-00-01.png</figcaption>
+                    </figure>
+               </section>
+               <section id="strength" class="lesson-section">
+                    <h2>2. n8n의 5대 핵심 강점</h2>
+                    <div class="path-grid">
+                         <article class="path-card">
+                              <h3>1. 시각적 캔버스</h3>
+                              <p>노드를 배치하고 연결선으로 이어 업무 흐름을 눈으로 확인할 수 있다.</p>
+                         </article>
+                         <article class="path-card">
+                              <h3>2. 다양한 서비스 연동</h3>
+                              <p>Google, Slack, Notion, DB, 클라우드 서비스 등을 공식·커뮤니티 노드로 연결할 수 있다.</p>
+                         </article>
+                         <article class="path-card">
+                              <h3>3. 데이터 주권</h3>
+                              <p>셀프호스팅을 선택하면 민감 데이터를 자신의 서버 안에서 처리하는 설계가 가능하다.</p>
+                         </article>
+                         <article class="path-card">
+                              <h3>4. 로우코드 확장</h3>
+                              <p>기본 노드로 어려운 가공은 Code 노드와 표현식으로 확장할 수 있다.</p>
+                         </article>
+                         <article class="path-card">
+                              <h3>5. AI Agent</h3>
+                              <p>LLM이 검색·DB·HTTP 요청 같은 도구를 선택해 실행하도록 워크플로우를 설계할 수 있다.</p>
+                         </article>
+                    </div>
+               </section>
+               <section id="concept" class="lesson-section">
+                    <h2>3. 반드시 알아야 할 5대 개념</h2>
+                    <div class="table-wrap">
+                         <table class="edu-table">
+                              <thead>
+                                   <tr>
+                                        <th>개념</th>
+                                        <th>쉬운 설명</th>
+                                        <th>예</th>
+                                   </tr>
+                              </thead>
+                              <tbody>
+                                   <tr>
+                                        <td>Workflow</td>
+                                        <td>자동화 전체 설계도</td>
+                                        <td>매일 뉴스 수집 후 Slack 전송</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Node</td>
+                                        <td>한 가지 기능을 수행하는 블록</td>
+                                        <td>Webhook, HTTP Request, If</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Connection</td>
+                                        <td>노드 사이에서 JSON 데이터가 이동하는 길</td>
+                                        <td>HTTP → If → Slack</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Credential</td>
+                                        <td>API Key·OAuth 등을 안전하게 보관하는 인증 정보</td>
+                                        <td>Google OAuth, OpenAI API Key</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Execution</td>
+                                        <td>워크플로우를 한 번 실행한 기록</td>
+                                        <td>입력·출력·오류 로그 확인</td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </div>
+                    <div class="mini-flow">Schedule Trigger → HTTP Request → If → Slack
+                         시작 수집 판단 알림</div>
+               </section>
+               <section id="practice" class="lesson-section">
+                    <h2>4. 초보자 첫 실습: 알림 워크플로우</h2>
+                    <ol class="step-list">
+                         <li>새 Workflow를 만든다.</li>
+                         <li>Manual Trigger를 추가한다.</li>
+                         <li>Edit Fields(Set) 노드에서 <code>message = "n8n 첫 실행 성공"</code> 값을 만든다.</li>
+                         <li>다음 노드에서 출력 JSON을 확인한다.</li>
+                         <li>성공하면 Manual Trigger를 Schedule Trigger로 바꾸어 자동 실행 구조를 이해한다.</li>
+                    </ol>
+                    <div class="beginner"><strong>초보자 포인트</strong><br>처음에는 외부 API 인증보다 “노드 하나의 입력이 다음 노드의 출력으로 어떻게
+                         전달되는지”를 먼저 확인하는 것이 좋다.</div>
+               </section>
+               <section class="lesson-section">
+                    <h2>5. 다음 학습</h2>
+                    <div class="next-box">
+                         <div><b>다음 페이지</b><br>n8n이 Zapier·Make와 어떤 차이를 가지는지 비교한다.</div><a
+                              href="chapter01_01Cnt.html">01-01 왜 n8n인가 →</a>
+                    </div>
+               </section>
+               <div class="image-audit"><b>이미지 감사</b><br>원문 이미지 1건 · 확인된 실제 원본 URL 1건 · 로컬 목표 파일
+                    <code>Img/01-00-01.png</code>. 다운로드 스크립트는 프로젝트 루트의 <code>download_original_images_ch01.ps1</code>에
+                    포함했다.</div>
+               <p class="source-note">원문: Wikidocs 290882. 원문을 그대로 복제하지 않고 초보자 강의용 설명으로 재구성하였다.</p>
+               <div class="footer">Point Color: Tomato #FF6347 · File: chapter01Cnt.html</div>
+          </main>
+     </div>
+     <script src="../JavaScript/main.js"></script>
+</body>
+
+</html>

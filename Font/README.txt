@@ -1,1 +1,1 @@
-시스템 한글 글꼴(Pretendard, Noto Sans KR, Malgun Gothic) 우선순위를 사용합니다. 별도 폰트 파일은 포함하지 않습니다.
+폰트 파일은 포함하지 않습니다. Pretendard / Noto Sans KR / Malgun Gothic fallback을 사용합니다.

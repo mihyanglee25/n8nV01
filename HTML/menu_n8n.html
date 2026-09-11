@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>n8n 메뉴</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body class="menu-page">
+    <aside class="sidebar"><input class="search" type="search" placeholder="목차 검색">
+        <div class="nav-title">Contents</div>
+        <div class="nav">
+            <!-- <a class="active" data-search="HOME 홈" href="#" data-file="home.html" data-chapter="HOME">
+                <span class="num">⌂</span><span>HOME</span>
+            </a> -->
+            <a data-search="00 README" href="#" data-file="chapter00Cnt.html" data-chapter="00">
+                <span class="num">00</span><span>README</span>
+            </a>
+
+            <a data-search="01 n8n이란 무엇인가" href="#" data-file="chapter01.html" data-chapter="01">
+                <span class="num">01</span><span>n8n이란 무엇인가</span>
+            </a>
+
+            <a data-search="02 n8n 설치가이드" href="#" data-file="chapter02.html" data-chapter="02">
+                <span class="num">02</span><span>n8n 설치가이드</span>
+            </a>
+
+            <a data-search="03 n8n 인터페이스" href="#" data-file="chapter03.html" data-chapter="03">
+                <span class="num">03</span><span>n8n 인터페이스</span>
+            </a>
+
+            <a data-search="04 Auth 인증" href="#" data-file="chapter04.html" data-chapter="04">
+                <span class="num">04</span><span>Auth 인증</span>
+            </a>
+
+            <a data-search="05 AI Agent" href="#" data-file="chapter05.html" data-chapter="05">
+                <span class="num">05</span><span>AI Agent</span>
+            </a>
+
+            <a data-search="06 워크플로우" href="#" data-file="chapter06.html" data-chapter="06">
+                <span class="num">06</span><span>워크플로우</span>
+            </a>
+
+            <a data-search="07 데이터분석 AI Agent" href="#" data-file="chapter07.html" data-chapter="07">
+                <span class="num">07</span><span>데이터분석 AI Agent</span>
+            </a>
+
+            <a data-search="08 MCP" href="#" data-file="chapter08.html" data-chapter="08">
+                <span class="num">08</span><span>MCP</span>
+            </a>
+
+            <a data-search="09 Claude Code + n8n" href="#" data-file="chapter09.html" data-chapter="09">
+                <span class="num">09</span><span>Claude Code + n8n</span>
+            </a>
+
+            <a data-search="10 n8n 커뮤니티 노드" href="#" data-file="chapter10.html" data-chapter="10">
+                <span class="num">10</span><span>n8n 커뮤니티 노드</span>
+            </a>
+
+            <a data-search="11 유즈케이스" href="#" data-file="chapter11.html" data-chapter="11">
+                <span class="num">11</span><span>유즈케이스</span>
+            </a>
+
+            <a data-search="12 n8n Error Playbook" href="#" data-file="chapter12.html" data-chapter="12">
+                <span class="num">12</span><span>n8n Error Playbook</span>
+            </a>
+
+            <a data-search="13 운영 및 모니터링" href="#" data-file="chapter13.html" data-chapter="13">
+                <span class="num">13</span><span>운영 및 모니터링</span>
+            </a>
+
+            <a data-search="14 n8n Chrome Extension" href="#" data-file="chapter14.html" data-chapter="14">
+                <span class="num">14</span><span>n8n Chrome Extension</span>
+            </a>
+
+            <a data-search="15 실전 워크플로우 레시피" href="#" data-file="chapter15.html" data-chapter="15">
+                <span class="num">15</span><span>실전 워크플로우 레시피</span>
+            </a>
+
+            <a data-search="16 n8n Creators" href="#" data-file="chapter16.html" data-chapter="16">
+                <span class="num">16</span><span>n8n Creators</span>
+            </a>
+
+            <a data-search="80 데이터팝콘 소식" href="#" data-file="chapter80.html" data-chapter="80">
+                <span class="num">80</span><span>데이터팝콘 소식</span>
+            </a>
+
+            <a data-search="90 릴리즈노트" href="#" data-file="chapter90.html" data-chapter="90">
+                <span class="num">90</span><span>릴리즈노트</span>
+            </a>
+
+            <a data-search="99 놓치면 후회하는 꿀팁 모음" href="#" data-file="chapter99.html" data-chapter="99">
+                <span class="num">99</span><span>놓치면 후회하는 꿀팁 모음</span>
+            </a>
+        </div>
+    </aside>
+    <script>
+        const search = document.querySelector('.search');
+        if (search) search.addEventListener('input', () => {
+            const q = search.value.trim().toLowerCase();
+            document.querySelectorAll('[data-search]').forEach(el =>
+                el.classList.toggle('hidden', q && !el.dataset.search.toLowerCase().includes(q)));
+        });
+
+
+        document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', e => {
+            e.preventDefault();
+            const f = a.dataset.file, c = a.dataset.chapter;
+
+            if (parent && parent.openChapter) parent.openChapter(f, c);
+            setActiveMenu(f);
+        }));
+
+        window.setActiveMenu = function (file) {
+            document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('active',
+                a.dataset.file === file));
+        };
+    </script>
+</body>
+
+</html>
